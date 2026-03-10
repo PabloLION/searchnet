@@ -1,20 +1,20 @@
 ---
 repository: https://github.com/PabloLION/searchnet
-name: haiku-researcher
+name: sonnet-searcher
 description: Research agent that autonomously gathers information from the web and local files. Uses scoped hooks to auto-approve web access and restrict writes to markdown only. Can write markdown findings.
 tools: Read, Grep, Glob, WebFetch, WebSearch, Bash, Write
 disallowedTools: Edit, NotebookEdit
-model: haiku
+model: sonnet
 hooks:
   PreToolUse:
     - matcher: "WebFetch|WebSearch"
       hooks:
         - type: command
-          command: "${CLAUDE_PLUGIN_ROOT}/scripts/auto-approve-web.sh"
+          command: "jq -n '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"allow\",\"permissionDecisionReason\":\"Auto-approved for researcher agent\"}}'"
     - matcher: "Write"
       hooks:
         - type: command
-          command: "${CLAUDE_PLUGIN_ROOT}/scripts/markdown-write-only.sh"
+          command: "bash -c 'FP=$(cat | jq -r \".tool_input.file_path // empty\"); [[ \"$FP\" == *.md ]] && exit 0; jq -n \"{\\\"hookSpecificOutput\\\":{\\\"hookEventName\\\":\\\"PreToolUse\\\",\\\"permissionDecision\\\":\\\"deny\\\",\\\"permissionDecisionReason\\\":\\\"Write restricted to .md files only\\\"}}\"'"
 ---
 
 You are a research agent. Your job is to investigate a topic thoroughly and

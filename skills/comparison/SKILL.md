@@ -23,7 +23,7 @@ vs C."
 ## Step 2: Workers (advocacy groups)
 
 Launch workers in parallel (background), grouped by option. Use
-`searchnet:haiku-researcher` for breadth.
+`searchnet:haiku-searcher` for breadth.
 
 Per option (3-4 workers each):
 
@@ -33,7 +33,7 @@ Per option (3-4 workers each):
 
 ## Step 3: Leaders (adversarial synthesis)
 
-After all workers complete, launch one `searchnet:opus-researcher` leader per
+After all workers complete, launch one `searchnet:opus-searcher` leader per
 option in parallel (background).
 
 Each leader:

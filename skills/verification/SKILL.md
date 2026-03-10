@@ -22,7 +22,7 @@ You are the verification search orchestrator. This pipeline checks claims:
 ## Step 2: Workers (dual-track)
 
 For each claim, launch 2 worker groups in parallel (background). Use
-`searchnet:haiku-researcher`.
+`searchnet:haiku-searcher`.
 
 - **Support track** (2 workers per claim) — search for evidence that confirms
   the claim
@@ -33,7 +33,7 @@ Each worker writes to `workers/{claim}-{support|contradict}-{n}.md`.
 
 ## Step 3: Leaders (credibility assessment)
 
-After all workers complete, launch one `searchnet:opus-researcher` leader per
+After all workers complete, launch one `searchnet:opus-searcher` leader per
 claim in parallel (background).
 
 Each leader:

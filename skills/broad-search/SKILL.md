@@ -21,7 +21,7 @@ questions: "does X exist?", "what tools do Y?", "what's out there for Z?"
 
 ## Step 2: Workers
 
-Launch 16 `searchnet:haiku-researcher` agents in parallel (background).
+Launch 16 `searchnet:haiku-searcher` agents in parallel (background).
 
 Each worker:
 
@@ -31,7 +31,7 @@ Each worker:
 
 ## Step 3: Leaders
 
-After all workers complete, launch 4 `searchnet:opus-researcher` agents in
+After all workers complete, launch 4 `searchnet:opus-searcher` agents in
 parallel (background).
 
 Each leader:
