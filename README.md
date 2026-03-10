@@ -17,12 +17,9 @@ All pipelines include a final verification step using the `verifier` agent.
 
 | Agent | Model | Permission strategy |
 |-------|-------|-------------------|
-| haiku-researcher | Haiku | Hooks (external scripts) |
-| sonnet-researcher | Sonnet | Hooks (external scripts) |
-| opus-researcher | Opus | Hooks (external scripts) |
-| hook-researcher | Sonnet | Hooks (inline jq) |
-| bypass-researcher | Sonnet | bypassPermissions |
-| bypass-opus-researcher | Opus | bypassPermissions |
+| haiku-searcher | Haiku | Inline jq hooks |
+| sonnet-searcher | Sonnet | Inline jq hooks |
+| opus-searcher | Opus | Inline jq hooks |
 | verifier | Opus | Read-only (no write tools) |
 
 ## Installation

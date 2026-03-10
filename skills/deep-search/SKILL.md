@@ -21,7 +21,7 @@ of Z?"
 
 ## Step 2: Workers (iterative)
 
-Launch 4-6 `searchnet:opus-researcher` agents (one per subtopic), in parallel
+Launch 4-6 `searchnet:opus-searcher` agents (one per subtopic), in parallel
 (background).
 
 Each worker:
@@ -34,7 +34,7 @@ Each worker:
 
 ## Step 3: Leaders
 
-After all workers complete, launch 2 `searchnet:opus-researcher` agents in
+After all workers complete, launch 2 `searchnet:opus-searcher` agents in
 parallel (background).
 
 Each leader:
