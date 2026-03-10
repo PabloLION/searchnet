@@ -1,4 +1,5 @@
 ---
+repository: https://github.com/PabloLION/searchnet
 name: verifier
 description: Report verification agent that checks research outputs for consistency, completeness, accuracy, and relevance. Reviews final reports before delivery.
 tools: Read, Grep, Glob, WebFetch, WebSearch, Bash

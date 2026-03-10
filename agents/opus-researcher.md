@@ -1,4 +1,5 @@
 ---
+repository: https://github.com/PabloLION/searchnet
 name: opus-researcher
 description: Research agent that autonomously gathers information from the web and local files. Uses scoped hooks to auto-approve web access and restrict writes to markdown only. Can write markdown findings.
 tools: Read, Grep, Glob, WebFetch, WebSearch, Bash, Write

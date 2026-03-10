@@ -1,4 +1,5 @@
 ---
+repository: https://github.com/PabloLION/searchnet
 description: >
   Deep investigation of a single topic using iterative depth-first search.
   Best for "how does X work?" and "explain Y thoroughly" questions.

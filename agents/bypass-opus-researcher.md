@@ -1,4 +1,5 @@
 ---
+repository: https://github.com/PabloLION/searchnet
 name: bypass-opus-researcher
 description: Research agent that autonomously gathers information from the web and local files without permission prompts. Uses permission bypass for frictionless research. Can write markdown findings.
 permissionMode: bypassPermissions

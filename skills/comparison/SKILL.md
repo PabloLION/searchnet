@@ -1,4 +1,5 @@
 ---
+repository: https://github.com/PabloLION/searchnet
 description: >
   Structured comparison of alternatives using adversarial advocacy groups.
   Best for "X vs Y", "which is better?", and evaluation questions.

@@ -1,4 +1,5 @@
 ---
+repository: https://github.com/PabloLION/searchnet
 description: >
   Broad discovery search using a 3-tier pyramid: 16 Haiku workers, 4 Opus
   leaders, 1 Opus manager. Best for "does X exist?" and "what tools are

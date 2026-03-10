@@ -1,4 +1,5 @@
 ---
+repository: https://github.com/PabloLION/searchnet
 description: >
   Claim verification with dual-track evidence collection and credibility
   scoring. Best for "is it true that X?" and fact-checking questions.
