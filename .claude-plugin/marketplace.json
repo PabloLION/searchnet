@@ -1,0 +1,15 @@
+{
+  "name": "searchnet",
+  "description": "Local marketplace for searchnet plugin",
+  "owner": {
+    "name": "PabloLION"
+  },
+  "plugins": [
+    {
+      "name": "searchnet",
+      "source": ".",
+      "description": "Multi-pipeline search plugin using tiered agent architectures",
+      "version": "0.1.0"
+    }
+  ]
+}

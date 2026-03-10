@@ -1,0 +1,11 @@
+{
+  "name": "searchnet",
+  "version": "0.1.0",
+  "description": "Multi-pipeline search plugin using tiered agent architectures",
+  "author": {
+    "name": "Pablo LION"
+  },
+  "repository": "https://github.com/PabloLION/searchnet",
+  "license": "MIT",
+  "keywords": ["search", "research", "broad-search", "agents", "pipeline"]
+}
