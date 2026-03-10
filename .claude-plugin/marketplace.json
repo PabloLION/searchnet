@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "searchnet",
-      "source": ".",
+      "source": "./",
       "description": "Multi-pipeline search plugin using tiered agent architectures",
       "version": "0.1.0"
     }
