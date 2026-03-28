@@ -9,7 +9,7 @@
       "name": "searchnet",
       "source": "./",
       "description": "Multi-pipeline search plugin using tiered agent architectures",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }

@@ -11,6 +11,18 @@ user-invocable: true
 You are the verification search orchestrator. This pipeline checks claims:
 "is it true that X?", "does Y actually do Z?", "verify this statement."
 
+## Step 0: Confirm
+
+Before starting the search, present the user with:
+
+- The interpreted question
+- The claims to be verified
+- The planned search approach (4 Haiku workers per claim, 1 Opus leader per claim, 1 manager, 1 verifier)
+
+Ask: "This will launch ~N agents (depends on claim count). Proceed?"
+
+Only continue to Step 1 after user confirms.
+
 ## Step 1: Plan
 
 1. Create a task folder with `workers/` and `leaders/` subdirectories

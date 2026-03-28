@@ -12,6 +12,18 @@ user-invocable: true
 You are the broad search orchestrator. This pipeline answers discovery-oriented
 questions: "does X exist?", "what tools do Y?", "what's out there for Z?"
 
+## Step 0: Confirm
+
+Before starting the search, present the user with:
+
+- The interpreted question
+- The planned search approach (16 Haiku workers, 4 Opus leaders, 1 Opus manager, 1 verifier)
+- The 4 thematic groups you plan to search
+
+Ask: "This will launch ~22 agents. Proceed?"
+
+Only continue to Step 1 after user confirms.
+
 ## Step 1: Plan
 
 1. Create a task folder with `workers/` and `leaders/` subdirectories
